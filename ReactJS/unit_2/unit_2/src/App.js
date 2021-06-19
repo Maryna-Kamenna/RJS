@@ -19,9 +19,10 @@ const site = {
 function App() {
   return (
     <>
-      <Sidebar />
-      <Header sitename='About React' />
-      <Footer />
+      <Sidebar data={site} />
+      <Header data={site} />
+      <Footer data={site} />
+
       <Main />
     </>
   );
