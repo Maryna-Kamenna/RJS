@@ -79,7 +79,7 @@ function App() {
 
   function task8(event) {
     if (isFinite(event.key)) {
-      console.log(myRef8.current.value);
+      //  console.log(myRef8.current.value);
       st8 += 1
     } else {
       st8 += 0
