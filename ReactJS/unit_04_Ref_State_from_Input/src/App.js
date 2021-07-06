@@ -30,7 +30,6 @@ function App() {
 
   //task 10
   let text10 = React.createRef();
-  let out10 = React.createRef();
 
 
   function task1() {
