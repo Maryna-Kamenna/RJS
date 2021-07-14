@@ -6,6 +6,7 @@ import Sidebar from './Main/Sidebar';
 import Footer from './Footer/Footer';
 
 
+
 const site = {
   site_name: "react test",
   site_title: "my first site with react",
