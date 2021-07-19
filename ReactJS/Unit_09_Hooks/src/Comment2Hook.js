@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Comment2ListHook from './Comment2ListHook';
+
 
 
 function Comment2Hook() {
@@ -14,20 +16,22 @@ function Comment2Hook() {
                 console.log(data);
                 setData(data)
             });
+
+    
     };
 
     return (
         <>
             <div>
                 <p>Choose post ID:</p>
-                <select onChange={this.selectHandler}>
+                <select onChange={selectHendler}>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
                 <div>
-                    <Comments2ListHook data={data} />
+                    <Comment2ListHook data={data} />
                 </div>
             </div>
         </>
