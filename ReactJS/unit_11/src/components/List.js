@@ -1,14 +1,19 @@
-function List (users) {
-  console.log(users);
-
-  return (
-    <>
-    </>
-  // <ul>
-  //     {user.user.map( item =><li key={item.passport}>{item.passport}{item.name}{item.age} </li> )}
-  // </ul>
-  );
+function List(data) {
+	console.log('-------')
+	console.log(data)
+	console.log('-------')
+	return (
+		<>
+			<div>
+				<ul>
+					{data.users}
+					{data.users.map((item) => (
+						<li key={item.index}>{item.name}</li>
+					))}
+				</ul>
+			</div>
+		</>
+	)
 }
 
-
-export default List;
+export default List

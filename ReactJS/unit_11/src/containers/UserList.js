@@ -6,7 +6,4 @@ function mapStateToProps(state) {
     return { user : users };
 }
 
-export default connect(
-    mapStateToProps,
-    null
-)(List);
+export default connect( mapStateToProps, null)(List);
