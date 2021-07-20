@@ -1,35 +1,32 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
-import  {addNewUser}  from '../action';
+import { addNewUser } from '../action';
 
-const AddUser = ()=> {
+function AddUser() {
   const dispatch = useDispatch()
 
-  const  formHandler = (event)=>{
+  const formHandler = (event) => {
     event.PreventDefault();
-    console.log(event.target.elements.passport.value);
-    dispatch(addNewUser(
-      event.target.elements.passport.value, 
-      event.target.elements.name.value,
-      event.target.elements.age.value)); 
-   }
+    console.log(event.target.elements);
+    let data = event.target.elements
+    console.log(data.passport.value);
+    dispatch(addNewUser(data.passport.value, data.name.value, data.age.value))
+  }
 
-  return(
+  return (
     <div>
       <form onSubmit={formHandler}>
         <div>
-    <input type='text' name='passport' defaultValue='SM748496' ></input>
+          <input type='text' name='passport' />
         </div>
         <div>
-    <input type='text' name='name' defaultValue='Marina' ></input>
+          <input type='text' name='name' />
         </div>
         <div>
-    <input type='text' name='age' defaultValue='32'></input>
+          <input type='text' name='age' />
         </div>
         <div>
-      <button type='submit'> Add new user</button>
+          <button type='submit'> Add new user</button>
         </div>
-
       </form>
     </div>
   )
