@@ -1,17 +1,14 @@
-import React from 'react';
-import './index.css';
-import App from './components/App';
+import React from 'react'
+import './index.css'
+import App from './components/App'
 
 import { render } from 'react-dom'
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import rootReducer from './reducers';
-import initialState from './store/initialState';
-import { createStore } from 'redux';
+import { Provider } from 'react-redux'
+import rootReducer from './reducers'
+import initialState from './store/initialState'
+import { createStore } from 'redux'
 
-
-const store = createStore(rootReducer, initialState);
-
+const store = createStore(rootReducer, initialState)
 
 render(
   <React.StrictMode>
@@ -20,4 +17,4 @@ render(
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)

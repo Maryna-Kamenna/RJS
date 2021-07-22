@@ -7,6 +7,7 @@ function AddUser() {
   const formHandler = (event) => {
     event.PreventDefault();
     console.log(event.target.elements);
+
     let data = event.target.elements
     console.log(data.passport.value);
     dispatch(addNewUser(data.passport.value, data.name.value, data.age.value))
