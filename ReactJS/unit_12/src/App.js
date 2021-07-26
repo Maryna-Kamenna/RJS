@@ -1,5 +1,7 @@
 import './App.css';
 import GoodsList from './containers/GoodsList';
+import CartList from './containers/CartList';
+
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <div>
         {/* {Вывод даных и зхранилища} */}
         <GoodsList />
+        <CartList />
       </div>
     </>
   );
