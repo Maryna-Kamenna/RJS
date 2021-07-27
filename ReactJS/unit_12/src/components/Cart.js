@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { selectGoods } from '../store/goodsSlice'
 import '../App.css'
 import { selectCart } from '../store/cartSlice'
-import { minus, delete } from '../store/cartSlice';
+import { minus } from '../store/cartSlice';
 
 function Cart(props) {
 
@@ -27,9 +27,9 @@ function Cart(props) {
 		dispatch(minus(event.target.dataset['key']));
 	}
 
-	const delete = () => {
+	// const delete = () => {
 
-  }
+  // }
 
 return(
   <>
@@ -43,7 +43,7 @@ return(
   <td><button
 							className='minus-cart'
 							data-key={articul}
-							onClick={minusFunc}
+							onClick={minus}
 						>
 							-
 						</button></td>

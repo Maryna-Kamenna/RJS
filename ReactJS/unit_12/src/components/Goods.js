@@ -1,5 +1,5 @@
 
-function Goods(props) {
+function Goods(props) { // получает даные через пропсы и просто их выводит
     return (
 
         <div className="goods-block">

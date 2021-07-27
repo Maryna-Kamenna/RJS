@@ -5,7 +5,7 @@ import { selectGoods } from '../store/goodsSlice';
 import Goods from '../components/Goods'
 import { increment} from "../store/cartSlice";
 
-// берем даные из хранилища list data
+// берем даные из хранилища list data и выводит на экран
 
 function GoodsList() {
 
@@ -15,6 +15,7 @@ function GoodsList() {
     let clickHandler=(event)=>{
         event.preventDefault();
         console.log(event.target);
+        
         let t = event.target;
         if(!t.classList.contains('add-to-cart')) return true;
         dispatch(increment(t.getAttribute('data-key')));
