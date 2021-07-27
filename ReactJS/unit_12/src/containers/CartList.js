@@ -6,36 +6,27 @@ import {selectCart} from '../store/cartSlice';
 
 
 function CartList() {
-    const goods = useSelector(selectGoods);
-    const cart = useSelector(selectCart);
-    // переиндексация массива товаров
-    //(где ключами будет артикул а содержимым обькт товаров )
+    const goods = useSelector(selectGoods);// товары
+    const cart = useSelector(selectCart);// корзина
+    // переиндексация массив товара
+    //(где ключами будет артикул а содержимым обькт товаров(если товаров не так много))
     const goodsObj = goods.reduce((accum, item) => {
-        console.log(accum);
+       // console.log(accum);
         accum[item['articul']] = item;
         return accum;
     }, {});
      console.log(goodsObj);
 
-     let minusHandler = ()=>{
-        
-     }
-     let deleteHandler=( )=> {
-
-     }
-
 
     return (
        <>
-        <table>
-        <h1> Basket </h1>
+       <h1> Basket </h1>
+        <table>   
         <tbody>
             <tr>
             <td>Title</td>
             <td>Cost</td>
             <td>Count</td>
-            <td> <button onClick={minusHandler}> - </button> </td>
-            <td> <button onClick={deleteHandler}> Delete </button> </td>
             <td>Total cost</td>
             </tr>    
             {Object.keys(cart).map(item =>(

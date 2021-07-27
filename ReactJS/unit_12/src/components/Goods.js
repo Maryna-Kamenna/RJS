@@ -7,6 +7,7 @@ function Goods(props) { // получает даные через пропсы �
             <p>{props.title}</p>
             <p>{props.cost}</p>
             <button className="add-to-cart" data-key={props.articul}> Add to cart </button>
+            {/* здесь прорисовывается кнопка */}
         </div>
     )
 }
