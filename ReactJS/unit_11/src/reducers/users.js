@@ -1,4 +1,4 @@
-const users = (state = [], action) => {
+const users = (state = [], action) => { // ввод даных в хранилище
     switch (action.type) {
         case 'ADD_USER':
             console.log('we add new user');

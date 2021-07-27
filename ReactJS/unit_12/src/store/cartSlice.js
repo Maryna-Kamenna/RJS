@@ -3,30 +3,24 @@ import { createSlice } from '@reduxjs/toolkit';
 export const cartSlice = createSlice({
     name: 'cart',
     initialState: {
-        value: {}
+        value: {}// это корзина- она пустая
     },
     reducers: {
-        increment: (state, data) => {
-            console.log(data);
+        increment: (state, data) => { // стейт и даные по которому кликнули
+           console.log(data);
             let articul = data.payload;
             if (state.value[articul] === undefined) state.value[articul] = 0;
             state.value[articul]++;
         },
         minus: (state, data) => {
-            console.log(data);
             let articul = data.payload;
-            if (state.value[articul] - 1 > 0) {
-                state.value[articul]--;
+            state.value[articul]--
+            if (state.value[articul] === 0) {
+                delete state.value[articul]
             }
-        },
-        // delete: (state, data) => {
-        //     console.log(data);
-        //     let articul = data.payload;
-        //     if (state.value[articul] === undefined) state.value[articul] = 0;
+        }
+}});
 
-    }
-});
-
-export const { increment, minus } = cartSlice.actions;
-export const selectCart = state => state.cart.value;
+export const { increment,minus} = cartSlice.actions;
+export const selectCart = state => state.cart.value; // название хранилища даных
 export default cartSlice.reducer;

@@ -5,7 +5,7 @@ import {
     minus,
     multi,
     division,
-    text,
+    text
 } from './app/taskReducerSlice';
 
 export default function In() {
@@ -27,7 +27,6 @@ export default function In() {
     const divisionHandler = () => {
         dispatch(division(task1Input.current.value));
     }
-     
     const textHandler =() =>{
          dispatch(text(addText.current.value));
     }

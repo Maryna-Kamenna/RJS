@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
     selectValue,
@@ -7,8 +7,8 @@ import {
 } from './app/taskReducerSlice';
 
 export default function Out() {
-    const task1 = useSelector(selectValue);  // получаем данные из store
-    const addText = useSelector(selectText);
+    const task1 = useSelector(selectValue);  // получаем данные из store из value
+    const addText = useSelector(selectText);// получаем данные из store из text
     const dispatch = useDispatch();
 
     return (
