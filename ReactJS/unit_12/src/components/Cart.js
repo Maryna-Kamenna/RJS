@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { selectGoods } from '../store/goodsSlice'
 import '../App.css'
 import { selectCart } from '../store/cartSlice'
-import { minus, delete } from '../store/cartSlice';
+import { minus } from '../store/cartSlice';
 
 function Cart(props) {
 
@@ -27,29 +27,27 @@ function Cart(props) {
 		dispatch(minus(event.target.dataset['key']));
 	}
 
-	const delete = () => {
+	// const delete = event => {
+	// 	event.preventDefault();
+	// 	console.log(event.target);
+	// 	let t = event.target;
+	// 	if (!t.classList.contains('add-to-cart')) return true;
+	// 	dispatch(delete (event.target.dataset['key']));
 
-  }
+	// }
 
-return(
-  <>
+	return (
+		<>
+			<tr>
+				<td>{goodsObj[articul]['title']}</td>
+				<td>{goodsObj[articul]['cost']}</td>
+				<td>{cart[articul]['count']}</td>
+				<td><button className='minus-cart' data-key={articul} onClick={minus}> - </button></td>
 
+				<td><button className='minus-cart' data-key={articul} > delete </button></td>
+			</tr>
 
-
-<tr>
-  <td>{goodsObj[articul]['title']}</td>
-  <td>{goodsObj[articul]['cost']}</td>
-  <td>{cart[articul]['count'] }</td>  
-  <td><button
-							className='minus-cart'
-							data-key={articul}
-							onClick={minusFunc}
-						>
-							-
-						</button></td>
-</tr>
-  
-</>
-)
+		</>
+	)
 }
 export default Cart
