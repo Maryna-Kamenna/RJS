@@ -1,43 +1,28 @@
-import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { selectGoods } from '../store/goodsSlice'
 import '../App.css'
-import { selectCart } from '../store/cartSlice'
+
 
 function Cart(props) {
-
-	const goods = useSelector(selectGoods)
-	const cart = useSelector(selectCart)
-	const articul = props['articul'];
-
-	//	const dispatch = useDispatch()
-
-	const goodsObj = goods.reduce((accum, item) => {
-		accum[item['articul']] = item
-		return accum
-	}, {})
-
-	// 	const minus = event => {
-	// 		event.preventDefault()
-	// 		let t = event.target
-	// console.log(t);
-	// 		if (!t.classList.contains('minus-cart')) return true
-	// }
-	// !!!!!!!!!!!!!!! передаем сюда articul с кнопки!!!!
-	//dispatch(minus(event.target.dataset['key']));
-
-
+	let cart = goods.cart;
+	let goodsObj = goods.data
 	return (
 		<>
-			<tr>
-				<td>{goodsObj[articul]['title']}</td>
-				<td>{goodsObj[articul]['cost']}</td>
-				<td>{cart[articul]['count']}</td>
-				<td><button className='minus-cart'
-					data-key={articul}
-				//onClick={minus}
-				> - </button></td>
-			</tr>
+			<div>
+				<hr />
+				<table>
+					<tbody>
+						<tr>
+							<td><img src={props.image} alt='фото' className='item' /></td>
+							<td>{props.title}</td>
+							<td>{props.cost}</td>
+							<td>{props.item}</td>
+							<td>{props.total}</td>
+							<td><button className='add-to-cart' data-key={props.articul}>+</button></td>
+							<td><button className='minus-from-cart' data-key={props.articul}>-</button></td>
+							<td><button className='remove-from-cart' data-key={props.articul}>del</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
 		</>
 	)

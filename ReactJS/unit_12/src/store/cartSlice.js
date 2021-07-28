@@ -7,7 +7,7 @@ export const cartSlice = createSlice({
     },
     reducers: {
         increment: (state, data) => { // стейт и даные по которому кликнули
-           console.log(data);
+            console.log(data);
             let articul = data.payload;
             if (state.value[articul] === undefined) state.value[articul] = 0;
             state.value[articul]++;
@@ -18,9 +18,15 @@ export const cartSlice = createSlice({
             if (state.value[articul] === 0) {
                 delete state.value[articul]
             }
+            console.log(state.value[articul]);
+        },
+        del: (state, data) => {
+            let articul = data.payload;
+            delete state.value[articul];
         }
-}});
+    }
+});
 
-export const { increment,minus} = cartSlice.actions;
+export const { increment, minus, del } = cartSlice.actions;
 export const selectCart = state => state.cart.value; // название хранилища даных
 export default cartSlice.reducer;
