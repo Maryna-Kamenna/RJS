@@ -2,7 +2,7 @@
   padding-top: 30px;
 }
 .container {
-  max-width: 1200px;
+  max-width: 120px;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
@@ -24,7 +24,7 @@
   font-size: 0.8rem;
 }
 
-.td,
+td,
 th {
   border: 1px solid rgb(190, 190, 190);
   padding: 5px 10px;
@@ -41,7 +41,7 @@ td {
 }
 
 .goods-block {
-  width: 30%;
+  width: 10%;
   margin: 1%;
   padding: 10px;
   border: 1px solid black;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Cart from '../components/Cart'
-import { useDispatch, useSelector } from 'react-redux';
+import {  useDispatch, useSelector } from 'react-redux';
 import { selectGoods } from '../store/goodsSlice';
 import { selectCart } from '../store/cartSlice';
 import { minus, del } from '../store/cartSlice';
@@ -17,7 +17,6 @@ function CartList() {
   let clickHandler = (event) => {
     event.preventDefault();
     let t = event.target;
-
     if (t.classList.contains('minus-from-cart')) {
       dispatch(minus(t.getAttribute('data-key')));
     };

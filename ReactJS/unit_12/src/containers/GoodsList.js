@@ -22,7 +22,7 @@ function GoodsList() {
         dispatch(increment(t.getAttribute('data-key'))); //если это кнопка - то вызову диспетчб и
         //передам ему артикул товара (дата кей)
 
-    }
+ }
 
     return (
         <>
