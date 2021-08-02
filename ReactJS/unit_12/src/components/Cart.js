@@ -11,7 +11,6 @@ function Cart(props) {
 
 	return (
 		<>
-
 			{Object.keys(cart).map(item =>
 				<tr>
 					<th>{goodsObj[item]['title']}</th>
@@ -19,9 +18,10 @@ function Cart(props) {
 					<th>{goodsObj[item]['cost']}</th>
 					<th>{cart[item]}</th><th>{goodsObj[item]['cost'] * cart[item]}</th>
 					<th><button className='minus' data-key={goodsObj[item]['artikul']}> -  </button></th>
-					<th><button className='delete' data-key={goodsObj[item]['artikul']}> delete </button></th>
-				</tr>)}
-			<tr className='container2'>
+					<th><button className='remove' data-key={goodsObj[item]['artikul']}> delete </button></th>
+				</tr>
+			)}
+				<tr className='container2'>
 				<th className='total' >Total:{total}</th>
 			</tr>
 		</>

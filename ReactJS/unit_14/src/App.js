@@ -9,7 +9,7 @@ function App() {
   const [t2, setTask2] = useState();
   const [t3, setTask3] = useState();
   const [t4, setTask4] = useState();
-  const [t5, setTask5] = useState();
+  const [t5, setTask5] = useState({});
 
 
   function task1 () {
@@ -35,7 +35,6 @@ function App() {
      let n2= event.target[1].value
 
     fetch("http://localhost:8888/api.php", {
-      mode: 'no-cors',
       method: 'POST',
       header: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -103,7 +102,7 @@ function App() {
       header: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify({action:5 })
+      body: JSON.parse({action:5 })
     })
       .then(response => response.text())
       .then(response => {
@@ -161,7 +160,7 @@ function App() {
         <form action="" onSubmit = {task5}>
           <button type="sumbit">Push</button>
         </form>
-		<ul></ul>
+		<ul> </ul>
       </div>  
    
       </div>

@@ -23,7 +23,7 @@ function CartList() {
     if (t.classList.contains('remove-from-cart')) {
       dispatch(del(t.getAttribute('data-key')));
     } else {
-      return false
+      return true
     };
   }
 
