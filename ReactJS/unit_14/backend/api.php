@@ -1,5 +1,6 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Origin: *');
+
 
 $content = trim(file_get_contents("php://input"));
 $content = json_decode($content, true);
