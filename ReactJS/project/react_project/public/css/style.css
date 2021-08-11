@@ -1,4 +1,6 @@
-
-.active{
-    color: red;
+.active {
+  color: red;
+}
+.hide {
+  display: none;
 }
