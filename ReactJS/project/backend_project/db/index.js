@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("ReactJs", "root", "root", {
+const sequelize =  new Sequelize("reactjs", "root", "root", {
     dialect: "mysql",
     host: "localhost"
 });
@@ -8,6 +8,6 @@ const sequelize = new Sequelize("ReactJs", "root", "root", {
 const Notes = require('./notes')(sequelize);
 
 module.exports = {
-    sequelize: sequelize,
-    notes: Notes
+    sequelize : sequelize,
+    notes : Notes
 }

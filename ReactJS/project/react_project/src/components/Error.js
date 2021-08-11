@@ -1,8 +1,9 @@
-function Error(){
-  return(
-    <div>
+function Error() {
+    return (
+        <div>
 
-    </div>
-  )
+        </div>
+    );
 }
+
 export default Error;
