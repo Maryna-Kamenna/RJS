@@ -60,29 +60,31 @@ function Note() {
     }
 
     return (
-    <>
-     
-         
-        <div>
-            <div className={lineClass}>
-                {/* <h4>Note:</h4> */}
-                <div>{noteText}</div>
-                <div> <button type="submit" className="btn btn-primary" onClick={searchNote}>Смотреть еще одну заметку(note)</button></div>
+        <>
+
+
+            <div class="container">
+                <div className={lineClass}>
+                    {/* <h4>Note:</h4> */}
+                    <div>{noteText}</div>
+                    <div> <button type="submit" className="btn btn-primary" onClick={searchNote}>Смотреть еще одну заметку(note)</button></div>
+                </div>
+                <div>
+                    <div className={errorClass}>
+                        <p >Произошла ошибка. Такой  заметки (note) не найденo!!!</p>
+                    </div>
+                </div>
+                <div className={formClass}>
+                    <form action="" onSubmit={getNote}>
+                        <label htmlFor="url"></label>
+                        <input type="text" name="url" id="url" className="form-control" placeholder="Введите hash заметки" />
+                        <button type="submit" className="btn btn-primary">Искать Note</button>
+                    </form>
+                </div>
             </div>
-            <div className={errorClass}>
-                <p>Произошла ошибка. Такой  заметки (note) не найденo!!!</p>
-            </div>
-            <div className={formClass}>
-                <form action="" onSubmit={getNote}>
-                    <label htmlFor="url"></label>
-                    <input type="text" name="url" id="url" className="form-control" defaultValue="Введите hash заметки" />
-                    <button type="submit" className="btn btn-primary">Искать Note</button>
-                </form>
-            </div>
-        </div>
         </>
     );
-    
+
 }
 
 export default Note;

@@ -1,8 +1,10 @@
 function Error() {
     return (
-        <div>
+
+        <div class="container">
 
         </div>
+
     );
 }
 
