@@ -41,15 +41,17 @@ function Create() {
     return (
         <div>
             <form onSubmit={loadDataFromForm} className={formClass}>
-                <label htmlFor="">Введите заметку</label>
-                <textarea name="note" id="note" defaultValue="Test"></textarea>
-                <button type="submit">Создать</button>
+                {/* <label htmlFor="">Введите заметку</label> */}
+                <textarea className="form-control"name="note" id="note" defaultValue="Введите заметку"></textarea>
+                <button type="submit" class="btn btn-primary">Создать </button> 
             </form>
             <div className={lineClass}>
                 <div>{url}</div>
-                <div><button onClick={function(){window.location.reload()}}>Cоздать новую заметку</button></div>
+                <div>
+                <button type="button" class="btn btn-primary" onClick={function(){window.location.reload()}}>
+                Cоздать новую заметку </button>
             </div>
-
+            </div>
         </div>
     );
 }
