@@ -20,7 +20,7 @@ function Create() {
         })
             .then(response => response.json())
             .then(response => {
-                console.log(response);
+                //      console.log(response);
                 if (response.result) {
                     setUrl(env.url + '/' + response.url);
                 }
@@ -32,24 +32,24 @@ function Create() {
         let note = event.target.elements.note.value;
         note = note.trim();
         if (note === '') {
-            alert('Заполните поля');
+            alert('Fill the fields');
             return false;
         }
         sendData({ "note": note });
     }
 
     return (
-        <div class="container">
+        <div class="text-center container ">
+            <p>On this page you can create notes.</p>
             <form onSubmit={loadDataFromForm} className={formClass}>
-                {/* <label htmlFor="">Введите заметку</label> */}
-                <textarea className="form-control" name="note" id="note" placeholder="Введите заметку"></textarea>
-                <button type="submit" className="btn btn-primary">Создать </button>
+                <textarea className="form-control" name="note" id="note" placeholder="Enter your note"></textarea>
+                <button type="submit" className="btn btn-primary">Create </button>
             </form>
             <div className={lineClass}>
                 <div>{url}</div>
                 <div>
                     <button type="button" className="btn btn-primary" onClick={function () { window.location.reload() }}>
-                        Cоздать новую заметку </button>
+                        Create new Note </button>
                 </div>
             </div>
         </div>

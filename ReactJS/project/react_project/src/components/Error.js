@@ -1,9 +1,9 @@
 function Error() {
     return (
 
-        <div class="container">
+        < >
 
-        </div>
+        </>
 
     );
 }
