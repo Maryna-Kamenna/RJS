@@ -23,7 +23,7 @@ function Note() {
             })
                 .then(response => response.json())
                 .then(response => {
-                    console.log(response);
+                    //    console.log(response);
                     if (response.result) {
                         setNoteText(response.note);
                         setLineClass('');
@@ -49,7 +49,7 @@ function Note() {
         let url = event.target.elements.url.value;
         url = url.trim();
         if (url === '') {
-            alert('Заполните поля');
+            alert('Fill the fields');
             return false;
         }
         noteURL = url;
@@ -62,23 +62,23 @@ function Note() {
     return (
         <>
 
-
-            <div class="container">
+            <div class=" text-center container">
+                <p>To find your notes, use 'hash' of yours note</p>
                 <div className={lineClass}>
-                    {/* <h4>Note:</h4> */}
+
                     <div>{noteText}</div>
-                    <div> <button type="submit" className="btn btn-primary" onClick={searchNote}>Смотреть еще одну заметку(note)</button></div>
+                    <div> <button type="submit" className="btn btn-primary" onClick={searchNote}>See another note</button></div>
                 </div>
-                <div>
-                    <div className={errorClass}>
-                        <p >Произошла ошибка. Такой  заметки (note) не найденo!!!</p>
-                    </div>
+
+                <div className={errorClass}>
+                    <p className="btn-primary navbar-brand">Something is wrong (. No such note was found (</p>
                 </div>
+
                 <div className={formClass}>
                     <form action="" onSubmit={getNote}>
                         <label htmlFor="url"></label>
-                        <input type="text" name="url" id="url" className="form-control" placeholder="Введите hash заметки" />
-                        <button type="submit" className="btn btn-primary">Искать Note</button>
+                        <input type="text" name="url" id="url" className="form-control" placeholder="Enter hash notes" />
+                        <button type="submit" className="btn btn-primary">Search note</button>
                     </form>
                 </div>
             </div>

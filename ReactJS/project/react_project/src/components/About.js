@@ -1,17 +1,17 @@
 
 function About() {
     return (
-        <div class="container">
+        <div class="text-center container">
             <div>
-                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Может тут?</a>
-                <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#"> О нас</a></li>
-                    <li><a className="dropdown-item" href="#">О сайте</a></li>
-                    <li><a className="dropdown-item" href="#">Контакты</a></li>
-                    <li><a className="dropdown-item" href="#">Мы в соц сетях</a></li>
+                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Maybe here?</a>
+                <ul className="dropdown-menu ">
+                    <li><a className="dropdown-item" href="#!">About us</a></li>
+                    <li><a className="dropdown-item" href="#!">About site</a></li>
+                    <li><a className="dropdown-item" href="#!">Contacts</a></li>
+                    <li><a className="dropdown-item" href="#!">Social media</a></li>
                 </ul>
             </div>
-            <p>Вы находитесь на сайте, который создан на React. Он взаимодействует с базой даных в которую Вы можете записывать свои note, а также просматривать их и добавлять новые</p>
+            <p>You're on a site that's built with React. It interacts with a database,  where you can write your notes,  view them using hash and add new ones</p>
         </div>
     );
 }
