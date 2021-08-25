@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "spaceagecyrillic";
-  src: url("../fonts/AnyConv.com__spaceagecyrillic-regular.woff2    ")
+  src: url("../fonts/AnyConv.com__spaceagecyrillic-regular.woff2")
       format("woff2"),
     url("../fonts/spaceagecyrillic-regular.woff") format("woff");
   font-style: normal;
@@ -37,11 +37,12 @@ a {
   text-decoration: none;
 }
 
-.button {
+button {
   border: none;
   background-color: transparent;
   cursor: pointer;
   color: inherit;
+  font-family: "sf-pro-display";
 }
 
 body {
@@ -66,6 +67,15 @@ body {
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
+}
+
+.button {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 45px;
+  /* margin-top: 60px; */
 }
 
 .header {
@@ -209,13 +219,12 @@ body {
   font-weight: 400;
   color: #036cca;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .about__content-text {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -228,9 +237,15 @@ body {
   border-left: none;
   border-right: none;
 }
+.about__table-tr + .about__table-tr {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: bold;
+  text-align: center;
+}
 
 .about__table-td {
-  padding: 10px 30px 30px;
+  padding: 10px 30px 10px 0px;
 }
 
 .about__table-td span {
@@ -260,13 +275,13 @@ foreignObject {
 }
 
 .how-to__box g:hover circle {
-  r: 20px;
+  r: 18px;
   fill: #036cca;
 }
 
 .how-to__box g:hover text {
   fill: #036cca;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .how-to__box g:hover foreignObject {
@@ -293,7 +308,7 @@ foreignObject {
 
 .to-book__text {
   width: 165px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   margin-top: 100px;
   margin-left: auto;
@@ -320,21 +335,214 @@ foreignObject {
 
 .special-offer__item {
   width: 500px;
-  min-height: 400px;
 }
 
 .special-offer__item-box {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border: 1px solid #fff;
   padding: 40px 75px;
   text-align: center;
-  border: 1px solid #fff;
-  margin-bottom: 25px;
 }
 
 .special-offer__item-text {
+  width: 236px;
   font-size: 24px;
   line-height: 29px;
 }
 
 .special-offer__item-text span {
   color: #cb0e0e;
+}
+
+.special-offer__old-price {
+  text-align: right;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.special-offer__old-price::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 1px;
+  background-color: #cb0e0e;
+  top: 7px;
+  right: 0;
+  transform: rotate(15deg);
+}
+
+.special-offer__new-price {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.special-offer__btn {
+  width: 100%;
+}
+
+.services {
+  padding-bottom: 200px;
+}
+
+.services__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__box-list {
+  width: 620px;
+  margin-right: 80px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.services__list-title {
+  margin-bottom: 25px;
+}
+
+.services__list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.services__list-item {
+  padding-left: 36px;
+  position: relative;
+}
+
+.services__list-item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 4px;
+}
+
+.services__description {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.services__buttons {
+  width: 500px;
+}
+.services__btn {
+  width: 100%;
+}
+.services__btn-first {
+  margin-bottom: 50px;
+  position: relative;
+}
+.services__btn-first::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 43px;
+  background-image: url(../images/fotograf.png);
+  width: 192px;
+  height: 150px;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slider__inner {
+  margin-bottom: 50px;
+  border: 1px solid #fff;
+  padding: 100px;
+}
+
+.slider__box-img {
+  margin: 0 auto;
+}
+
+.slider__description {
+  font-family: "spaceagecyrillic";
+  font-size: 24px;
+  line-height: 30px;
+}
+.slider__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+.slider__arrow-left {
+  left: -25px;
+}
+.slider__arrow-right {
+  right: -25px;
+}
+
+.contacts {
+  background-color: #010203;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__box {
+  width: 500px;
+}
+
+.contacts__title {
+  padding-bottom: 46px;
+}
+
+.contacts__box-text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 80px;
+}
+
+.contacts__form {
+}
+.contacts__form-input {
+  background-color: #010203;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: "sf-pro-display";
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.contacts__form-input::placeholder {
+  color: #fff;
+  font-family: "sf-pro-display";
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.contacts__btn {
+  margin-top: 70px;
+  width: 100%;
+}
+.contacts__guarantees {
+  width: 500px;
+}
+.title {
+}
+.contacts__guarantees-text {
+  font-size: 24px;
+  line-height: 29px;
+}
+.contacts__guarantees-img {
+  display: flex;
+  justify-content: flex-end;
 }
