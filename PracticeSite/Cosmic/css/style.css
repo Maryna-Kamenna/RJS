@@ -173,8 +173,8 @@ body {
 
 .header__description-text {
   width: 165px;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 20px;
+  line-height: 18px;
 }
 
 .header__description-text + .header__description-text {
@@ -233,6 +233,7 @@ body {
 }
 .about__table {
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .about__table-tr {
@@ -249,7 +250,7 @@ body {
 }
 
 .about__table-td {
-  padding: 10px 30px 10px 0px;
+  padding: 10px 30px 10px 0;
 }
 
 .about__table-td span {
@@ -635,37 +636,81 @@ foreignObject {
 .menu__btn span::after {
   top: 10px;
 }
+.how-to__box-list{
+  display: none;
+}
+
+
 @media (max-width: 1160px) {
+  /* .button {
+    margin-top: 60px;
+  } */
   .about__item {
     display: block;
-    text-align: center;
   }
   .about__content {
     width: 100%;
   }
   .about__content-text {
-    width: 600px;
+   display: block;
+  }
+  .about__content-text p{
+    width: 100%;
+    margin-bottom: 20px;
   }
   .about__img {
     margin-bottom: 50px;
   }
+  .about{
+    text-align: center;
+  }
+  .about__table{
+    width: 100%;
+  }
 }
+
+@media (max-width: 1050px){
+.special-offer__inner{
+  display: block;
+}
+.special-offer__item{
+  width: 100%;
+}
+.special-offer__btn{
+  margin-bottom: 20px;
+}
+}
+
+
 @media (max-width: 1024px) {
   .login {
     margin-right: 0;
   }
+  .to-book__inner{
+    display: block;
+  }
+  .to-book__text {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;  
+  }
 }
 
 @media (max-width: 895px) {
+  .title {
+    text-align: center;
+}
   .header__top {
     padding-top: 30px;
-    /* padding: 50px 120px 28px; */
   }
   .menu__btn {
     display: block;
   }
   .menu__list {
     transform: translateY(-150%);
+    transition: all .5s;
     display: block;
     position: absolute;
     top: 0;
@@ -700,11 +745,69 @@ foreignObject {
   .header {
     background-position: center right;
   }
+  .how-to__box svg{
+    display: none;
+  }
+  .how-to__box-list{
+    display: block;
+    list-style: none;
+  }
+  .how-to__box-item{
+    padding-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
+    border-left: 1px solid #fff;
+  }
+  .how-to__box-item::before{
+    content: '';
+    position: absolute;
+    left: -10;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .services__inner {
+    display: block;
+  }
+  .services__box-list{
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 170px;
+  }
+  .services__list-item::before{ 
+    position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 114px;
+      top: 13px;
+  }
+  .services__buttons {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 760px){
+  .services__list-item::before{
+    display: none;
+  }
 }
 
 @media (max-width: 620px) {
+  .header__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+  }
   .header__title {
-    font-size: 34px;
+    font-size: 40px;
     line-height: 30px;
   }
   .header__title span {
@@ -715,7 +818,7 @@ foreignObject {
   }
   .header__text {
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
   }
   .header__text p {
     padding: 0 10px;
@@ -723,7 +826,7 @@ foreignObject {
   .header__btn {
     font-size: 18px;
     line-height: 24px;
-    width: 60%;
+    width: 70%;
   }
   .header__description {
     display: block;
@@ -749,8 +852,11 @@ foreignObject {
   }
   .about__table-td {
     display: block;
-    text-align: center;
-    border-radius: 1px solid #fff;
+    text-align: right;
+    border-bottom: 1px solid #fff;
+  }
+  .about__table-td:last-child {
+    border-bottom: none;
   }
   .about__table-td span {
     display: inline-block;
@@ -763,8 +869,18 @@ foreignObject {
     font-size: 20px;
     line-height: 22px;
     font-weight: 400;
-    text-align: center;
   }
+  .to-book{
+    background-position: top left;
+  }
+}
+
+
+@media (max-width: 480px){
+.title{
+  font-size: 28px;
+  line-height: 28px;
+ }
 }
 
 @media (max-width: 360px) {
