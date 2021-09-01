@@ -1,0 +1,132 @@
+*{
+box-sizing: border-box;
+}
+.body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #544837;
+  font-size: 16px;
+  line-height: 26px;
+}
+.button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.title{
+color: #2f281e;
+}
+
+.container{
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+/* margin: 0 auto;
+padding: 0 10px; */
+}
+
+.header__inner{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+height: 78px;
+}
+
+.menu{
+  margin-left: auto;
+}
+
+.menu__list{
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item{
+  margin-left: 24px;
+}
+
+.menu__list-link{
+  color: #2f281e;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.user-nav{
+  margin-left: 52px;
+  margin-right: 13px;
+}
+
+.user-nav__link{
+  margin-left: 14px;
+  color: #173a56;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 11px 23px; 
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.user-nav__link + .user-nav__link{
+  padding-left: 14px;
+  border-color: transparent;
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.top{
+ padding: 133px 0 80px;
+ background-image: url(../images/top_bg.svg);
+ background-repeat: no-repeat;
+}
+
+.top__title{
+font-weight: bold;
+font-size: 44px;
+margin-bottom: 30px;
+min-width: 518px;
+}
+
+.top__text{
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 28px;
+  margin-bottom: 45px;
+  max-width: 460px
+}
+
+.top__btn{
+  display: inline-block;
+  color: #fff;
+  background-color: #ff9900;
+  border-radius: 4px;
+  padding: 15px 41px 14px;
+  margin-right: 30px;
+  border: none;
+}
+
+.top__link{
+  display: inline-block;
+font-size: 16px;
+line-height: 24px;
+color: #ff9900;
+padding-left: 25px;
+position: relative;
+}
+
+.top__link::before{
+  content: '';
+  position: absolute;
+  left:0 ;
+  top: 2px;
+  width: 17px;
+ height: 19px;
+ background-image: url(../images/play.svg);
+}
