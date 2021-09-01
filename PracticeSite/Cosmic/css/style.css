@@ -913,7 +913,25 @@ foreignObject {
 
 
 @media (max-width: 570px) {
-
+.footer__inner{
+  display: block;
+}
+.footer__text{
+  width: 100%;
+  margin-right: 0;
+}
+.footer__text p  +  p{
+ margin-top: 10px;
+ margin-bottom: 30px;
+}
+.footer__menu,
+.footer__links{
+  margin-right: 0;
+  width: 100%;
+}
+.footer__menu{
+margin-bottom: 20px;
+}
 }
 
 
@@ -963,7 +981,7 @@ foreignObject {
   }
 }
 @media (max-width: 375px) {
-  .services__btn-first {
+  .services__btn-first::before {
     bottom: 63px;
   }
 }
