@@ -174,7 +174,7 @@ body {
 .header__description-text {
   width: 165px;
   font-size: 20px;
-  line-height: 18px;
+  line-height: 26px;
 }
 
 .header__description-text + .header__description-text {
@@ -258,6 +258,9 @@ body {
   line-height: 17px;
   display: block;
 }
+.button__table{
+  margin-top: 60px;
+}
 
 .how-to {
   background-image: url(../images/how_to-bg.jpg);
@@ -313,8 +316,8 @@ foreignObject {
 
 .to-book__text {
   width: 165px;
-  font-size: 16px;
-  line-height: 17px;
+  font-size: 20px;
+  line-height: 22px;
   margin-top: 100px;
   margin-left: auto;
   margin-right: 52px;
@@ -568,12 +571,14 @@ foreignObject {
 
 .footer__inner {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  font-size: 20px;
+  line-height: 22px;
 }
 
 .footer__text {
   width: 165px;
-  margin-right: 50px;
+ 
 }
 
 .footer__text p + p {
@@ -702,6 +707,7 @@ foreignObject {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -762,15 +768,18 @@ foreignObject {
   .how-to__box-item {
     padding-bottom: 30px;
     text-align: left;
-    padding-left: 20px;
-    margin-left: 20px;
+    padding-left: 55px;
+    margin-left: 30px;
     position: relative;
     border-left: 1px solid #fff;
+  }
+  .how-to__box-item:hover{
+font-size: 150%;
   }
   .how-to__box-item::before {
     content: "";
     position: absolute;
-    left: -10;
+    left: 15px;
     top: 0;
     width: 20px;
     height: 20px;
@@ -815,7 +824,7 @@ foreignObject {
   }
   .slider__description {
     font-style: 18px;
-    line-height: 24;
+    line-height: 2;
   }
   .info {
     padding-bottom: 50px;
@@ -909,6 +918,10 @@ foreignObject {
     font-size: 24px;
     line-height: 29px;
   }
+  .footer__inner{
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 
@@ -932,6 +945,9 @@ foreignObject {
 .footer__menu{
 margin-bottom: 20px;
 }
+.footer__inner{
+  text-align: center;
+ }
 }
 
 
