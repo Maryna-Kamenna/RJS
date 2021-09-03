@@ -1,2 +1,2 @@
 # React JavaScript
-Here my study at  "IT GID" on course  Java Script and React JS  and  Layot
+Here my study at  "IT GID" on course  React JS  and  Layot
