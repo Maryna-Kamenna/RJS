@@ -294,27 +294,31 @@ color: #fff;
 position: absolute;
 width: 98px;
 height: 98px;
-top: 157px;
 }
+
 .team__item-1{
 top: 157px;
 right: 95px;
 }
+
 .team__item-2{
-top: 390px;
-right: 120px;
+top: 223px;
+left: 0;
 }
+
 .team__item-3{
-  top: 549px;
-right: 497px;
+bottom: 257px;
+right: 0;
 }
+
 .team__item-4{
-  top: 390px;
-left: 120px;
+bottom: 223px;
+left: 210px;
 }
+
 .team__item-5{
-top: 157px;
-left: 95px;
+bottom: 135px;
+right: 300px;
 }
 
 .team__item-img{
@@ -329,12 +333,17 @@ left: 95px;
   background-color: #fff;
   padding: 14px 20px 15px;
   color: #2f281e;
-  box-shadow: 0px 2px 15px rgb(23, 58, 86, 0.1);
+  box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
   border-radius: 26px;
   position: absolute;
-  top: -30;
+  top: -38px;
   right: 75px;
-  white-space:nowrap;
+  white-space: nowrap;
+}
+.team__item-text.team__item-text--left{
+  top: -41px;
+  right: auto;
+  left: 62px; 
 }
 
 .team__item-text--right::after,
@@ -363,9 +372,27 @@ right: 30px;
   bottom: -20px;
   right: 9px;
 }
+
 .team__item-text--left::before{
-
+left: 9px;
+right: auto;
 }
-.team__item-text--left::after{
 
+.team__item-text--left::after{
+left: 30px;
+right: auto;
+}
+
+.blog{
+  padding: 30px 0 120px;
+}
+.blog__title{
+font-size: 34px;
+line-height: 51px;
+font-weight: 700;
+margin-bottom: 9px;
+}
+
+.blog__title{
+margin-bottom: 55px;
 }
