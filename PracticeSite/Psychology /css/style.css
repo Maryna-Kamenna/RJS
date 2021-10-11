@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #313149;
+    font-size: 18px;
+    line-height: 26px;
+  } 
+  
+  button{
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .title{
+    font-family: 'Mulish', sans-serif;
+    color: #101C5B;
+  }
+
+  .container{
+    background-image: url(../images/TopBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* width: 1320px; width: 1440px; */
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+  }
+
+  .header__logo-img{
+    font-family: 'Mulish', sans-serif;
+    font-size: 28px;
+    line-height: 26px;
+  }
+  
+  .menu{
+    margin-left: auto;
+  }
+  
+  .menu__list{
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+  }
+  
+  .menu__list-item + .menu__list-item{
+    margin-left: 20px;
+  }
+  
+  .menu__list-link{
+    color: #2f281e;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .top__inner{
+    max-width: 785px;
+  }
+  
+  .top__title-pretitle{
+    font-family: 'Mulish', sans-serif;
+    color: #101C5B;
+    font-size: 80px;
+    line-height: 86px;
+  }
+
+  .top__title{
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 15px;
+    max-width: 755px;
+  }
+  
+  .top__text{
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    max-width: 561px
+  }
+  
+  .top__btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #FD6655;
+    border-radius: 4px;
+    padding: 15px 41px 14px;
+    margin-right: 30px;
+    border: none;
+  }
+  
+  .top__link{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ff9900;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .top__link::before{
+    content: '';
+    position: absolute;
+    left:0 ;
+    top: 2px;
+    width: 17px;
+   height: 19px;
+   background-image: url(../images/play.svg);
+  }
