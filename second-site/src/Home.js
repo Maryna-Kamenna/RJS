@@ -5,6 +5,7 @@ import Jumbotron from "./components/Junbotron";
 import mozambik from "./mozambik.jpg";
 import madagascar from "./madagascar.jpg";
 import zanzibar from "./zanzibar.jpg";
+import sea from "./sea.jpg";
 
 export const Home = () => (
   <>
@@ -19,7 +20,7 @@ export const Home = () => (
               <Card.Text>
                 Lorem ipunsem some texzt I ned again to put ut here
               </Card.Text>
-              <Button variant="primary">Lern more</Button>
+              <Button variant="info">Lern more</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -31,7 +32,7 @@ export const Home = () => (
               <Card.Text>
                 Lorem ipunsem some texzt I ned again to put ut here
               </Card.Text>
-              <Button variant="primary">Lern more</Button>
+              <Button variant="info">Lern more</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -43,7 +44,7 @@ export const Home = () => (
               <Card.Text>
                 Lorem ipunsem some texzt I ned again to put ut here
               </Card.Text>
-              <Button variant="primary">Lern more</Button>
+              <Button variant="info">Lern more</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -52,11 +53,11 @@ export const Home = () => (
     <Jumbotron />
     <Container style={{ marginBottom: "30px" }}>
       <Row>
-        <Col md={7}>
-          <img src={mozambik} height={600} />
-        </Col>
-        <Col md={5}>
-          <h2> Web Developer 3454334565</h2>
+        <Col>
+          <img src={sea}/>
+          </Col>
+          <Col>
+          <h2> Web Developer </h2>
           <p>
             This is a common warning that developers run into when starting out
             with hooks in React. There are 3 possible reasons for this warning:

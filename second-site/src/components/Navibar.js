@@ -40,8 +40,8 @@ export function Navibar() {
                 </Nav.Link>
               </Nav>
               <Nav>
-                <Button variant="primary" className="mr-20" onClick={handleShow}>Log In</Button>
-                <Button variant="primary" onClick={handleShow}>Sign Out</Button>
+                <Button variant="info" className="mr-4" onClick={handleShow}>Sign In</Button>
+                <Button variant="info"  onClick={handleShow}>Sign Out</Button>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -49,12 +49,12 @@ export function Navibar() {
       </Styles>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header clouseButton>
-          <Modal.Title>Lod in</Modal.Title>
+          <Modal.Title>Sign in</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email Adress</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control type="email" placeholder="Enter your email" />
               <Form.Text className="text-muted">
                 We will never share you email with enyone else
@@ -62,7 +62,7 @@ export function Navibar() {
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Enter your Password" />
+              <Form.Control type="password" placeholder="Enter your password" />
             </Form.Group>
             <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Remember me" />
