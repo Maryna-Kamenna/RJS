@@ -1,58 +1,65 @@
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: border-box;
 }
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   color: #1f1e1e;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-.container{
+.title {
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+}
+.container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
 }
-.header{
+.header {
   background-image: url(../images/bg-header.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
-.header__inner{
+.header__inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
-.header__top{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-padding: 16px 0 49px;
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0 49px;
 }
 
-.header__phone{
+.header__phone {
   font-size: 16px;
   line-height: 130%;
-  color:#fff;
+  color: #fff;
   font-weight: 700;
 }
-.header__phone-number{
+.header__phone-number {
   font-weight: 400;
   margin-left: 19px;
   padding: 12px 31px 13px;
   background-color: #886239;
   border-radius: 22px;
 }
-.menu{
+.menu {
   width: 100%;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -60,7 +67,7 @@ padding: 16px 0 49px;
   padding: 27px 0 24px;
 }
 
-.menu__list{
+.menu__list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -68,21 +75,21 @@ padding: 16px 0 49px;
   color: #fff;
 }
 
-.header__title{
-  font-family: 'PT Serif', serif;
+.header__title {
+  font-family: "PT Serif", serif;
   font-weight: 700;
   font-size: 90px;
   line-height: 130%;
   text-align: center;
   margin-bottom: auto;
 }
-.header__descr{
+.header__descr {
   font-weight: 700;
- font-style: 20px;
+  font-style: 20px;
   min-width: 420px;
   margin-bottom: 20px;
 }
-.header__btn{
+.header__btn {
   display: inline-block;
   font-style: 18px;
   color: #fff;
@@ -91,24 +98,33 @@ padding: 16px 0 49px;
   border-radius: 30px;
   margin-bottom: 20px;
 }
-.header__arrow{
+.header__arrow {
   text-align: center;
   margin-bottom: 15px;
 }
-.direction{
+.direction {
   padding: 100px 0;
 }
-.direction__inner{
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 33px;
+.direction__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 33px;
 }
-.direction__title{
+.direction__img {
+  display: block;
+}
+.direction__title {
   font-size: 16px;
-  border: 1px solid #D9d9de;
+  border: 1px solid #d9d9de;
   border-top: none;
   padding: 10px 19px 14px;
 }
-.direction__img{
-  display: block;
+
+.travel__info {
+  background-image: url(../images/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.travel-info__title {
 }
