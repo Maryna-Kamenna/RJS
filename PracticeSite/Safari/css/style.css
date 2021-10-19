@@ -128,6 +128,7 @@ a {
 }
 .travel-info__title {
 }
+<<<<<<< HEAD
 .travel-info__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -146,3 +147,15 @@ a {
 }
 .popular__link {
 }
+=======
+
+.map__title{
+  margin-bottom: 46px;
+}
+.about{
+  padding-bottom: 100px;
+}
+.about__inner{
+display: grid;
+}
+>>>>>>> 2dfbaf7af9347cd0524be6c3c99b9fb6a073885b
