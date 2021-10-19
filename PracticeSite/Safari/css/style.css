@@ -121,14 +121,16 @@ a {
 }
 
 .travel__info {
-  background-image: url(../images/);
+  background-image: url(../images/bg-main-direction.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  padding: 30px 0 50px;
 }
 .travel-info__title {
+  color: #fff;
+  margin-bottom: 50px;
 }
-<<<<<<< HEAD
 .travel-info__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -145,17 +147,93 @@ a {
 .popular {
   padding: 100px 0;
 }
-.popular__link {
-}
-=======
 
-.map__title{
-  margin-bottom: 46px;
+/* .popular__link {
+} */
+
+/* .map__title {
+} */
+.popular__title {
+  margin-bottom: 40px;
 }
-.about{
+.popular__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 32px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #d9d9de;
+}
+.popular__link {
+  padding: 16px 24px 19px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 256px;
+  line-height: 130%;
+}
+.popular__link:nth-child(3) .popular__link:nth-child(6) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.popular__link-title {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.popular__link-title--big {
+  font-size: 24px;
+}
+.popular__price {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: auto;
+}
+.popular__country,
+.popular__time {
+  margin-bottom: 15px;
+}
+.map {
   padding-bottom: 100px;
 }
-.about__inner{
-display: grid;
+.map__title {
+  margin-bottom: 46px;
 }
->>>>>>> 2dfbaf7af9347cd0524be6c3c99b9fb6a073885b
+.about {
+  padding-bottom: 100px;
+}
+.about__inner {
+  display: grid;
+}
+.about__inner {
+  display: grid;
+  grid-template-columns: 448px 640px;
+  grid-gap: 32px;
+}
+.about__title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.about__text {
+  margin-bottom: 34px;
+}
+.about__link {
+  font-size: 19px;
+  line-height: 19px;
+  color: #c4c4c4;
+  text-decoration: underline;
+}
+.about__popup {
+  background-image: url(../images/video-popup.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .popup__link {
+} */
