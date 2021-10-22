@@ -147,6 +147,12 @@ a {
 .popular {
   padding: 100px 0;
 }
+
+/* .popular__link {
+} */
+
+/* .map__title {
+} */
 .popular__title {
   margin-bottom: 40px;
 }
@@ -198,6 +204,9 @@ a {
 }
 .about {
   padding-bottom: 100px;
+}
+.about__inner {
+  display: grid;
 }
 .about__inner {
   display: grid;

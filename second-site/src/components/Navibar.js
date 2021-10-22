@@ -27,7 +27,7 @@ export function Navibar() {
           <Container>
             <Navbar.Brand>Web Dev Blog</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Collapse className="d-flex justify-content-between" id="responsive-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link>
                   <Link to="/">Home</Link>
@@ -39,9 +39,9 @@ export function Navibar() {
                   <Link to="/about">About</Link>
                 </Nav.Link>
               </Nav>
-              <Nav>
-                <Button variant="info" className="mr-4" onClick={handleShow}>Sign In</Button>
-                <Button variant="info"  onClick={handleShow}>Sign Out</Button>
+              <Nav className="mr-1">
+                <Button variant="info" onClick={handleShow}>Sign In</Button>
+                <Button variant="info" className="mx-4" onClick={handleShow}>Sign Out</Button>
               </Nav>
             </Navbar.Collapse>
           </Container>
