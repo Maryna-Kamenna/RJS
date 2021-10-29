@@ -6,7 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 140%;
   color: #1f1e1e;
 }
@@ -86,7 +86,8 @@ a {
   margin-bottom: auto;
 }
 .header__descr {
-  font-weight: 700;
+  color: #fff;
+  font-weight: 400;
   font-style: 20px;
   min-width: 420px;
   margin-bottom: 20px;
@@ -389,13 +390,13 @@ a {
 }
 .footer__logo {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .footer__box {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 130%;
   max-width: 840px;
   margin: 0 auto;
@@ -423,6 +424,33 @@ a {
   display: block;
 }
 
+
+
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: #DDD;
+  color: #886239;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #886239;
+  color: #fff;
+}
 @media (max-width: 1140px) {
   .direction__inner {
     grid-template-columns: repeat(3, 1fr);
