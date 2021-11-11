@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  background-color: #9daccc;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  
+}
+footer {
+  max-width: 100vh;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 11px;
+}
